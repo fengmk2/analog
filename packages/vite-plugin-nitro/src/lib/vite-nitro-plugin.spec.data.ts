@@ -1,6 +1,6 @@
 import { NitroConfig } from 'nitropack';
-import { ConfigEnv, UserConfig, Plugin } from 'vite';
-import { Mock, vi } from 'vitest';
+import { ConfigEnv, UserConfig, Plugin } from '@voidzero-dev/vite-plus';
+import { Mock, vi } from '@voidzero-dev/vite-plus/test';
 import { resolve } from 'node:path';
 
 export const mockViteDevServer = {

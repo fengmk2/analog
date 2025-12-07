@@ -1,5 +1,5 @@
 import { CompilerHost } from '@angular/compiler-cli';
-import { normalizePath } from 'vite';
+import { normalizePath } from '@voidzero-dev/vite-plus';
 
 import * as ts from 'typescript';
 

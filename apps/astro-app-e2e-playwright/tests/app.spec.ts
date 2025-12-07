@@ -7,7 +7,7 @@ import {
   expect,
   test,
   describe,
-} from 'vitest';
+} from '@voidzero-dev/vite-plus/test';
 
 let browser: Browser;
 let page: Page;

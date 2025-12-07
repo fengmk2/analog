@@ -197,14 +197,15 @@
     "ts-morph": "^26.0.0",
     "ts-node": "10.9.2",
     "typescript": "5.9.3",
-    "vite": "^8.0.0-beta.0",
+    "vite": "catalog:",
     "vite-plugin-eslint": "^1.8.1",
     "vite-plugin-inspect": "11.3.2",
     "vite-tsconfig-paths": "4.2.0",
     "vitefu": "^1.1.1",
-    "vitest": "^4.0.0",
+    "vitest": "catalog:",
     "webpack-bundle-analyzer": "^4.7.0",
-    "xmlbuilder2": "^4.0.1"
+    "xmlbuilder2": "^4.0.1",
+    "@voidzero-dev/vite-plus": "catalog:"
   },
   "pnpm": {
     "ignoredBuiltDependencies": [

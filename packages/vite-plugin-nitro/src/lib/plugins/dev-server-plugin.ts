@@ -7,7 +7,7 @@ import {
   UserConfig,
   ViteDevServer,
   normalizePath,
-} from 'vite';
+} from '@voidzero-dev/vite-plus';
 import { resolve } from 'node:path';
 import { readFileSync } from 'node:fs';
 import { createEvent, sendWebResponse } from 'h3';

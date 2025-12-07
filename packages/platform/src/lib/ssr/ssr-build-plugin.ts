@@ -1,4 +1,4 @@
-import { normalizePath, Plugin } from 'vite';
+import { normalizePath, Plugin } from '@voidzero-dev/vite-plus';
 
 export function ssrBuildPlugin(): Plugin {
   return {

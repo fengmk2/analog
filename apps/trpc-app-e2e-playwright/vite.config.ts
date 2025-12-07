@@ -1,6 +1,6 @@
 /// <reference types="vitest" />
 
-import { defineConfig } from 'vite';
+import { defineConfig } from '@voidzero-dev/vite-plus';
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {

@@ -1,6 +1,6 @@
 /// <reference types="vitest" />
 
-import { defineConfig } from 'vite';
+import { defineConfig } from '@voidzero-dev/vite-plus';
 import angular from '@analogjs/vite-plugin-angular';
 
 // https://vitejs.dev/config/

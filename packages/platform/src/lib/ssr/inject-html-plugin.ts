@@ -1,5 +1,5 @@
 import { VERSION } from '@angular/compiler-cli';
-import { Plugin } from 'vite';
+import { Plugin } from '@voidzero-dev/vite-plus';
 import { readFile } from 'node:fs/promises';
 import { createRequire } from 'node:module';
 

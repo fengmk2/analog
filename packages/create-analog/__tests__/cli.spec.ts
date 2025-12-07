@@ -2,7 +2,12 @@ import type { ExecaSyncReturnValue, SyncOptions } from 'execa';
 import { execaCommandSync as commandSync } from 'execa';
 import { mkdirpSync, readdirSync, remove, writeFileSync } from 'fs-extra';
 import { join } from 'node:path';
-import { afterEach, beforeAll, expect, test } from 'vitest';
+import {
+  afterEach,
+  beforeAll,
+  expect,
+  test,
+} from '@voidzero-dev/vite-plus/test';
 
 const CLI_PATH = join(__dirname, '..');
 

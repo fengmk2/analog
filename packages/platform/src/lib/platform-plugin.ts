@@ -1,4 +1,4 @@
-import { Plugin } from 'vite';
+import { Plugin } from '@voidzero-dev/vite-plus';
 import viteNitroPlugin from '@analogjs/vite-plugin-nitro';
 import angular from '@analogjs/vite-plugin-angular';
 

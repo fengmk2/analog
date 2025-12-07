@@ -1,6 +1,6 @@
 import { readFileSync } from 'node:fs';
 import { join, relative, resolve } from 'node:path';
-import { normalizePath } from 'vite';
+import { normalizePath } from '@voidzero-dev/vite-plus';
 import { createRequire } from 'node:module';
 import { globSync } from 'tinyglobby';
 

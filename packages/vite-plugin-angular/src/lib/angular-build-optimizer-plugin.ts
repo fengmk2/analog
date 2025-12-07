@@ -1,5 +1,5 @@
-import type { Plugin, UserConfig } from 'vite';
-import * as vite from 'vite';
+import type { Plugin, UserConfig } from '@voidzero-dev/vite-plus';
+import * as vite from '@voidzero-dev/vite-plus';
 import { JavaScriptTransformer } from './utils/devkit.js';
 
 export function buildOptimizerPlugin({

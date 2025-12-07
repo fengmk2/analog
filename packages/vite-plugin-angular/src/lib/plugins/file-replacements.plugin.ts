@@ -1,6 +1,6 @@
 // source: https://github.com/Myrmod/vitejs-theming/blob/master/build-plugins/rollup/replace-files.js
 import { isAbsolute, resolve } from 'node:path';
-import { Plugin } from 'vite';
+import { Plugin } from '@voidzero-dev/vite-plus';
 
 export function replaceFiles(
   replacements: FileReplacement[],
