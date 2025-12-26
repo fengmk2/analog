@@ -25,7 +25,7 @@
       }
     },
     "test": {
-      "command": "vitest",
+      "command": "vite test",
       "options": {
         "cwd": "libs/my-package"
       }
