@@ -62,7 +62,7 @@ Vitest can be setup manually also using the steps below.
 To setup Vitest, create a `vite.config.mts` at the root of your project:
 
 ```ts
-/// <reference types="vitest" />
+/// <reference types="@voidzero-dev/vite-plus/test" />
 import { defineConfig } from 'vite';
 
 import angular from '@analogjs/vite-plugin-angular';
@@ -253,7 +253,7 @@ yarn add vite-tsconfig-paths --dev
 Next, add the plugin to the `plugins` array in the `vite.config.ts`.
 
 ```ts
-/// <reference types="vitest" />
+/// <reference types="@voidzero-dev/vite-plus/test" />
 import { defineConfig } from 'vite';
 
 import angular from '@analogjs/vite-plugin-angular';
@@ -270,7 +270,7 @@ export default defineConfig(({ mode }) => ({
 For Nx workspaces, import and use the `nxViteTsPaths` plugin from the `@nx/vite` package.
 
 ```ts
-/// <reference types="vitest" />
+/// <reference types="@voidzero-dev/vite-plus/test" />
 import { defineConfig } from 'vite';
 
 import angular from '@analogjs/vite-plugin-angular';

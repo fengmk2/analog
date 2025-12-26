@@ -1,5 +1,5 @@
-import type { Plugin, UserConfig } from 'vite';
-import { normalizePath } from 'vite';
+import type { Plugin, UserConfig } from '@voidzero-dev/vite-plus';
+import { normalizePath } from '@voidzero-dev/vite-plus';
 import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { globSync } from 'tinyglobby';

@@ -1,7 +1,7 @@
 import { writeFileSync } from 'node:fs';
 import { XMLBuilder } from 'xmlbuilder2/lib/interfaces';
 import { create } from 'xmlbuilder2';
-import { UserConfig } from 'vite';
+import { UserConfig } from '@voidzero-dev/vite-plus';
 import { resolve } from 'node:path';
 import {
   PrerenderContentFile,

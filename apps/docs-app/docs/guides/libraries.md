@@ -156,7 +156,7 @@ Static assets in the `public` directory are copied to the build output directory
 Import the plugin and set it up:
 
 ```ts
-/// <reference types="vitest" />
+/// <reference types="@voidzero-dev/vite-plus/test" />
 
 import { defineConfig } from 'vite';
 import analog from '@analogjs/vite-plugin-angular';

@@ -84,7 +84,7 @@ pnpm install -w @analogjs/vite-plugin-angular @analogjs/vitest-angular jsdom --s
 要配置 Vitest，在你的项目根目录创建 `vite.config.ts`：
 
 ```ts
-/// <reference types="vitest" />
+/// <reference types="@voidzero-dev/vite-plus/test" />
 import { defineConfig } from 'vite';
 
 import angular from '@analogjs/vite-plugin-angular';
@@ -235,7 +235,7 @@ pnpm install -w @vitest/browser playwright
 - 为 Vitest 添加一个 `browser` 配置。
 
 ```ts
-/// <reference types="vitest" />
+/// <reference types="@voidzero-dev/vite-plus/test" />
 import { defineConfig } from 'vite';
 
 import angular from '@analogjs/vite-plugin-angular';
@@ -396,7 +396,7 @@ pnpm install -w vite-tsconfig-paths --save-dev
 接下来，在 `vite.config.ts` 中的 `plugins` 数组中添加该插件，并将 `root` 设置为项目根目录的相对路径。
 
 ```ts
-/// <reference types="vitest" />
+/// <reference types="@voidzero-dev/vite-plus/test" />
 import { defineConfig } from 'vite';
 
 import angular from '@analogjs/vite-plugin-angular';
@@ -412,7 +412,7 @@ export default defineConfig(({ mode }) => ({
 对于 Nx 工作区，从 `@nx/vite` 包中导入并使用 `nxViteTsPaths` 插件。
 
 ```ts
-/// <reference types="vitest" />
+/// <reference types="@voidzero-dev/vite-plus/test" />
 import { defineConfig } from 'vite';
 
 import angular from '@analogjs/vite-plugin-angular';

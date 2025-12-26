@@ -5,7 +5,7 @@ import {
   PropertyAssignment,
   SyntaxKind,
 } from 'ts-morph';
-import { normalizePath } from 'vite';
+import { normalizePath } from '@voidzero-dev/vite-plus';
 
 interface StyleUrlsCacheEntry {
   matchedStyleUrls: string[];

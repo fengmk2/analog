@@ -1,6 +1,6 @@
-import { describe, it, expect } from 'vitest';
+import { describe, it, expect } from '@voidzero-dev/vite-plus/test';
 import { angularVitestPlugin } from './angular-vitest-plugin';
-import { defineConfig, resolveConfig } from 'vite';
+import { defineConfig, resolveConfig } from '@voidzero-dev/vite-plus';
 
 describe(angularVitestPlugin.name, () => {
   /* Setting the pool to vmThreads by default to avoid issues related to global conflicts when using JSDOM.

@@ -1,4 +1,4 @@
-import { Plugin, normalizePath } from 'vite';
+import { Plugin, normalizePath } from '@voidzero-dev/vite-plus';
 
 export function clearClientPageEndpointsPlugin(): Plugin {
   return {

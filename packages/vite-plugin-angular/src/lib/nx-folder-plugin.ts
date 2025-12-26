@@ -1,4 +1,4 @@
-import { normalizePath, Plugin } from 'vite';
+import { normalizePath, Plugin } from '@voidzero-dev/vite-plus';
 
 /**
  * Ignores anything in the .nx folder from triggering HMR

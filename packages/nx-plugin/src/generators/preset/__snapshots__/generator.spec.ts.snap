@@ -111,7 +111,7 @@ getTestBed().initTestEnvironment(
 `;
 
 exports[`preset generator > should match vite.config.ts 1`] = `
-"/// <reference types="vitest" />
+"/// <reference types="@voidzero-dev/vite-plus/test" />
 
 import analog from '@analogjs/platform';
 import { defineConfig } from 'vite';

@@ -5,7 +5,7 @@ import {
   TestBed,
 } from '@angular/core/testing';
 import { ActivatedRoute, convertToParamMap } from '@angular/router';
-import { expect } from 'vitest';
+import { expect } from '@voidzero-dev/vite-plus/test';
 import { Observable, of } from 'rxjs';
 
 import { CONTENT_FILES_TOKEN } from './content-files-token';

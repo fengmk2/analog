@@ -7,7 +7,7 @@ import {
   expect,
   test,
   describe,
-} from 'vitest';
+} from '@voidzero-dev/vite-plus/test';
 import { phones } from './fixtures/phones';
 import { ProductDetailPage } from './fixtures/products-details.po';
 import { ProductsListPage } from './fixtures/products-list.po';

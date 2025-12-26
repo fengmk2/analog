@@ -7,7 +7,7 @@ import {
   describe,
   expect,
   test,
-} from 'vitest';
+} from '@voidzero-dev/vite-plus/test';
 import { NotesPage } from './fixtures/notes.po';
 import { notes } from './fixtures/notes';
 

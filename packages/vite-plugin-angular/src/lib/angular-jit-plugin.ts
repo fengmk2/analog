@@ -1,4 +1,4 @@
-import { Plugin, ResolvedConfig, preprocessCSS } from 'vite';
+import { Plugin, ResolvedConfig, preprocessCSS } from '@voidzero-dev/vite-plus';
 
 export function jitPlugin({
   inlineStylesExtension,

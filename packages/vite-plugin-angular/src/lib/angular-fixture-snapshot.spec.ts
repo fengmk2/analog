@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { TestBed, ComponentFixture, waitForAsync } from '@angular/core/testing';
-import { describe } from 'vitest';
+import { describe } from '@voidzero-dev/vite-plus/test';
 
 /**
  * @vitest-environment jsdom

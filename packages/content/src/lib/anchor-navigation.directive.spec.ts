@@ -3,7 +3,7 @@ import { fakeAsync, TestBed, tick } from '@angular/core/testing';
 import { DOCUMENT } from '@angular/common';
 import { By } from '@angular/platform-browser';
 import { Router } from '@angular/router';
-import { expect, vi } from 'vitest';
+import { expect, vi } from '@voidzero-dev/vite-plus/test';
 import { AnchorNavigationDirective } from './anchor-navigation.directive';
 
 describe('AnchorNavigationDirective', () => {

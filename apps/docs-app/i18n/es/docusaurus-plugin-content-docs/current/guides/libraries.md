@@ -156,7 +156,7 @@ Los archivos estáticos en la carpeta `public` son copiados por defecto al direc
 Importar el plugin y configurarlo:
 
 ```ts
-/// <reference types="vitest" />
+/// <reference types="@voidzero-dev/vite-plus/test" />
 
 import { defineConfig } from 'vite';
 import analog from '@analogjs/vite-plugin-angular';

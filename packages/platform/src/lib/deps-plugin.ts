@@ -1,6 +1,6 @@
 import { VERSION } from '@angular/compiler-cli';
-import type { Plugin } from 'vite';
-import * as vite from 'vite';
+import type { Plugin } from '@voidzero-dev/vite-plus';
+import * as vite from '@voidzero-dev/vite-plus';
 import { crawlFrameworkPkgs } from 'vitefu';
 
 import { Options } from './options.js';

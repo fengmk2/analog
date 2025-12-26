@@ -1,8 +1,8 @@
-/// <reference types="vitest" />
+/// <reference types="@voidzero-dev/vite-plus/test" />
 
 import analog from '@analogjs/platform';
 import { visualizer } from 'rollup-plugin-visualizer';
-import { defineConfig, Plugin } from 'vite';
+import { defineConfig, Plugin } from '@voidzero-dev/vite-plus';
 import { nxViteTsPaths } from '@nx/vite/plugins/nx-tsconfig-paths.plugin';
 
 // https://vitejs.dev/config/

@@ -1,4 +1,4 @@
-import { Plugin } from 'vite';
+import { Plugin } from '@voidzero-dev/vite-plus';
 
 /**
  * This plugin ensures the ngServerMode flag is set

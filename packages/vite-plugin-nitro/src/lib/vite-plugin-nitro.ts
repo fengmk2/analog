@@ -1,7 +1,11 @@
 import { NitroConfig, build, createDevServer, createNitro } from 'nitropack';
 import { App, toNodeListener } from 'h3';
-import type { Plugin, UserConfig, ViteDevServer } from 'vite';
-import { mergeConfig, normalizePath } from 'vite';
+import type {
+  Plugin,
+  UserConfig,
+  ViteDevServer,
+} from '@voidzero-dev/vite-plus';
+import { mergeConfig, normalizePath } from '@voidzero-dev/vite-plus';
 import { dirname, join, relative, resolve } from 'node:path';
 import { platform } from 'node:os';
 import { fileURLToPath, pathToFileURL } from 'node:url';

@@ -1,5 +1,5 @@
-/// <reference types="vitest" />
-import { defineConfig } from 'vite';
+/// <reference types="@voidzero-dev/vite-plus/test" />
+import { defineConfig } from '@voidzero-dev/vite-plus';
 
 import viteTsConfigPaths from 'vite-tsconfig-paths';
 

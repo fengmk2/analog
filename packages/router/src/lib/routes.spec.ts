@@ -1,6 +1,6 @@
 import { Route } from '@angular/router';
 import { of } from 'rxjs';
-import { expect, vi } from 'vitest';
+import { expect, vi } from '@voidzero-dev/vite-plus/test';
 import { RouteExport, RouteMeta } from './models';
 import { createRoutes, Files } from './routes';
 import { ROUTE_META_TAGS_KEY } from './meta-tags';

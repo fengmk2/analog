@@ -1,5 +1,5 @@
 import { TestBed } from '@angular/core/testing';
-import { expect } from 'vitest';
+import { expect } from '@voidzero-dev/vite-plus/test';
 import { CONTENT_FILES_LIST_TOKEN } from './content-files-list-token';
 import { ContentFile } from './content-file';
 import {

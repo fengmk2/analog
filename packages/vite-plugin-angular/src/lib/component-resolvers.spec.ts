@@ -1,7 +1,7 @@
-import { describe, it, expect } from 'vitest';
+import { describe, it, expect } from '@voidzero-dev/vite-plus/test';
 
 import { StyleUrlsResolver, TemplateUrlsResolver } from './component-resolvers';
-import { normalizePath } from 'vite';
+import { normalizePath } from '@voidzero-dev/vite-plus';
 import { relative } from 'node:path';
 
 const WINDOWS_DRIVE_IN_PATH_RE = /\|[A-Z]:/i;
@@ -16,7 +16,7 @@ interface CustomMatchers<R = unknown> {
   toMatchNormalizedPaths: (expected: string[]) => R;
 }
 
-declare module 'vitest' {
+declare module '@voidzero-dev/vite-plus/test' {
   interface Assertion<T = any> extends CustomMatchers<T> {}
   interface AsymmetricMatchersContaining extends CustomMatchers {}
 }

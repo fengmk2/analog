@@ -1,4 +1,4 @@
-import { normalizePath, Plugin, UserConfig } from 'vite';
+import { normalizePath, Plugin, UserConfig } from '@voidzero-dev/vite-plus';
 import { globSync } from 'tinyglobby';
 import { resolve } from 'node:path';
 

@@ -7,7 +7,7 @@ import {
   BrowserTestingModule,
   platformBrowserTesting,
 } from '@angular/platform-browser/testing';
-import { afterEach, beforeEach } from 'vitest';
+import { afterEach, beforeEach } from '@voidzero-dev/vite-plus/test';
 
 const ANGULAR_TESTBED_SETUP = Symbol.for('testbed-setup');
 
