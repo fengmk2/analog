@@ -50,6 +50,7 @@ import {
   SourceFileCache,
   angularFullVersion,
 } from './utils/devkit.js';
+import { type SourceFileCache as SourceFileCacheType } from './utils/source-file-cache.js';
 
 const require = createRequire(import.meta.url);
 
@@ -172,7 +173,7 @@ export function angular(options?: PluginOptions): Plugin[] {
   let testWatchMode = isTestWatchMode();
   let inlineComponentStyles: Map<string, string> | undefined;
   let externalComponentStyles: Map<string, string> | undefined;
-  const sourceFileCache = new SourceFileCache();
+  const sourceFileCache: SourceFileCacheType = new SourceFileCache();
   const isTest = process.env['NODE_ENV'] === 'test' || !!process.env['VITEST'];
   const isVitestVscode = !!process.env['VITEST_VSCODE'];
   const isStackBlitz = !!process.versions['webcontainer'];
@@ -453,7 +454,6 @@ export function angular(options?: PluginOptions): Plugin[] {
           const updates: string[] = [];
           ctx.modules.forEach((mod) => {
             mod.importers.forEach((imp) => {
-              sourceFileCache.invalidate([imp.id]);
               ctx.server.moduleGraph.invalidateModule(imp);
 
               if (pluginOptions.liveReload && classNames.get(imp.id)) {
@@ -531,72 +531,58 @@ export function angular(options?: PluginOptions): Plugin[] {
 
         return;
       },
-      async transform(code, id) {
-        // Skip transforming node_modules
-        if (id.includes('node_modules')) {
-          return;
-        }
-
-        /**
-         * Check for options.transformFilter
-         */
-        if (
-          options?.transformFilter &&
-          !(options?.transformFilter(code, id) ?? true)
-        ) {
-          return;
-        }
-
-        if (pluginOptions.useAngularCompilationAPI) {
-          const isAngular =
-            /(Component|Directive|Pipe|Injectable|NgModule)\(/.test(code);
-
-          if (!isAngular) {
+      transform: {
+        filter: {
+          id: {
+            include: [TS_EXT_REGEX],
+            exclude: [/node_modules/, 'type=script', '@ng/component'],
+          },
+        },
+        async handler(code, id) {
+          /**
+           * Check for options.transformFilter
+           */
+          if (
+            options?.transformFilter &&
+            !(options?.transformFilter(code, id) ?? true)
+          ) {
             return;
           }
-        }
 
-        /**
-         * Check for .ts extenstions for inline script files being
-         * transformed (Astro).
-         *
-         * Example ID:
-         *
-         * /src/pages/index.astro?astro&type=script&index=0&lang.ts
-         */
-        if (id.includes('type=script')) {
-          return;
-        }
+          if (pluginOptions.useAngularCompilationAPI) {
+            const isAngular =
+              /(Component|Directive|Pipe|Injectable|NgModule)\(/.test(code);
 
-        /**
-         * Skip transforming content files
-         */
-        if (id.includes('?') && id.includes('analog-content-')) {
-          return;
-        }
-
-        /**
-         * Skip HMR URLs
-         */
-        if (id.includes('@ng/component')) {
-          return;
-        }
-
-        /**
-         * Encapsulate component stylesheets that use emulated encapsulation
-         */
-        if (pluginOptions.liveReload && isComponentStyleSheet(id)) {
-          const { encapsulation, componentId } = getComponentStyleSheetMeta(id);
-          if (encapsulation === 'emulated' && componentId) {
-            const encapsulated = ngCompiler.encapsulateStyle(code, componentId);
-            return {
-              code: encapsulated,
-              map: null,
-            };
+            if (!isAngular) {
+              return;
+            }
           }
-        }
 
-        if (TS_EXT_REGEX.test(id)) {
+          /**
+           * Skip transforming content files
+           */
+          if (id.includes('?') && id.includes('analog-content-')) {
+            return;
+          }
+
+          /**
+           * Encapsulate component stylesheets that use emulated encapsulation
+           */
+          if (pluginOptions.liveReload && isComponentStyleSheet(id)) {
+            const { encapsulation, componentId } =
+              getComponentStyleSheetMeta(id);
+            if (encapsulation === 'emulated' && componentId) {
+              const encapsulated = ngCompiler.encapsulateStyle(
+                code,
+                componentId,
+              );
+              return {
+                code: encapsulated,
+                map: null,
+              };
+            }
+          }
+
           if (id.includes('.ts?')) {
             // Strip the query string off the ID
             // in case of a dynamically loaded file
@@ -621,8 +607,6 @@ export function angular(options?: PluginOptions): Plugin[] {
               const invalidated = tsMod.lastInvalidationTimestamp;
 
               if (testWatchMode && invalidated) {
-                sourceFileCache.invalidate([id]);
-
                 pendingCompilation = performCompilation(resolvedConfig, [id]);
               }
             }
@@ -695,9 +679,7 @@ export function angular(options?: PluginOptions): Plugin[] {
             code: data,
             map: null,
           };
-        }
-
-        return undefined;
+        },
       },
       closeBundle() {
         declarationFiles.forEach(
@@ -918,10 +900,11 @@ export function angular(options?: PluginOptions): Plugin[] {
     }
 
     const isProd = config.mode === 'production';
+    const modifiedFiles = new Set<string>(ids ?? []);
+    sourceFileCache.invalidate(modifiedFiles);
 
     if (ids?.length) {
       for (const id of ids || []) {
-        sourceFileCache.invalidate([id]);
         fileTransformMap.delete(id);
       }
     }
@@ -1042,6 +1025,7 @@ export function angular(options?: PluginOptions): Plugin[] {
         isProd,
         inlineComponentStyles,
         externalComponentStyles,
+        sourceFileCache,
       });
     }
 

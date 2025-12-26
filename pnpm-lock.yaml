@@ -7271,6 +7271,41 @@ packages:
       unplugin-lightningcss: ^0.4.0
       unplugin-unused: ^0.5.0
       yaml: ^2.4.2
+    peerDependenciesMeta:
+      '@arethetypeswrong/core':
+        optional: true
+      '@types/node':
+        optional: true
+      '@vitejs/devtools':
+        optional: true
+      esbuild:
+        optional: true
+      jiti:
+        optional: true
+      less:
+        optional: true
+      publint:
+        optional: true
+      sass:
+        optional: true
+      sass-embedded:
+        optional: true
+      stylus:
+        optional: true
+      sugarss:
+        optional: true
+      terser:
+        optional: true
+      tsx:
+        optional: true
+      typescript:
+        optional: true
+      unplugin-lightningcss:
+        optional: true
+      unplugin-unused:
+        optional: true
+      yaml:
+        optional: true
 
   '@voidzero-dev/vite-plus-test@0.0.0-afbb2977759363d708f1bf3b5c51064eadebb598':
     resolution: {integrity: sha512-oyd/vN59xbaIBfQNQNemgbw20fPCl26T1QlTqwgp600Np1M+dWdcJGcmTzr6lFH2Z0kjz7vtwj7HzuVlZ360pw==, tarball: https://npm.pkg.github.com/download/@voidzero-dev/vite-plus-test/0.0.0-afbb2977759363d708f1bf3b5c51064eadebb598/643765998eb213eb5fbbf3dddbb9e882589912d3}
@@ -7282,6 +7317,19 @@ packages:
       '@vitest/ui': 4.0.15
       happy-dom: '*'
       jsdom: '*'
+    peerDependenciesMeta:
+      '@edge-runtime/vm':
+        optional: true
+      '@opentelemetry/api':
+        optional: true
+      '@types/node':
+        optional: true
+      '@vitest/ui':
+        optional: true
+      happy-dom:
+        optional: true
+      jsdom:
+        optional: true
 
   '@voidzero-dev/vite-plus@0.0.0-afbb2977759363d708f1bf3b5c51064eadebb598':
     resolution: {integrity: sha512-qoq3PTA61aA8s6mx2lorjvPjhvZHzXSwd/PskQbfWIp09lw/VmIveoegECi9nI/E96TGhR2VslOAqFMerJ6TCw==, tarball: https://npm.pkg.github.com/download/@voidzero-dev/vite-plus/0.0.0-afbb2977759363d708f1bf3b5c51064eadebb598/813b662507907ff51f6777cd421a680cfbe19744}
@@ -17763,7 +17811,8 @@ snapshots:
 
   '@aashutoshrathi/word-wrap@1.2.6': {}
 
-  '@adobe/css-tools@4.3.3': {}
+  '@adobe/css-tools@4.3.3':
+    optional: true
 
   '@adobe/css-tools@4.4.3': {}
 
@@ -17966,7 +18015,8 @@ snapshots:
       '@jridgewell/gen-mapping': 0.3.12
       '@jridgewell/trace-mapping': 0.3.29
 
-  '@andrewbranch/untar.js@1.0.3': {}
+  '@andrewbranch/untar.js@1.0.3':
+    optional: true
 
   '@angular-devkit/architect@0.2100.0(chokidar@4.0.3)':
     dependencies:
@@ -18415,6 +18465,7 @@ snapshots:
       semver: 7.7.3
       typescript: 5.6.1-rc
       validate-npm-package-name: 5.0.1
+    optional: true
 
   '@asamuzakjp/css-color@3.2.0':
     dependencies:
@@ -21987,7 +22038,8 @@ snapshots:
 
   '@bcoe/v8-coverage@1.0.2': {}
 
-  '@braidai/lang@1.1.2': {}
+  '@braidai/lang@1.1.2':
+    optional: true
 
   '@braintree/sanitize-url@6.0.2': {}
 
@@ -23166,11 +23218,13 @@ snapshots:
       - uglify-js
       - webpack-cli
 
-  '@edge-runtime/primitives@6.0.0': {}
+  '@edge-runtime/primitives@6.0.0':
+    optional: true
 
   '@edge-runtime/vm@5.0.0':
     dependencies:
       '@edge-runtime/primitives': 6.0.0
+    optional: true
 
   '@emnapi/core@1.5.0':
     dependencies:
@@ -23594,15 +23648,19 @@ snapshots:
   '@floating-ui/core@1.7.3':
     dependencies:
       '@floating-ui/utils': 0.2.10
+    optional: true
 
   '@floating-ui/dom@1.7.4':
     dependencies:
       '@floating-ui/core': 1.7.3
       '@floating-ui/utils': 0.2.10
+    optional: true
 
-  '@floating-ui/utils@0.2.10': {}
+  '@floating-ui/utils@0.2.10':
+    optional: true
 
-  '@gwhitney/detect-indent@7.0.1': {}
+  '@gwhitney/detect-indent@7.0.1':
+    optional: true
 
   '@hapi/hoek@9.3.0': {}
 
@@ -24191,6 +24249,7 @@ snapshots:
   '@loaderkit/resolve@1.0.4':
     dependencies:
       '@braidai/lang': 1.1.2
+    optional: true
 
   '@mapbox/node-pre-gyp@2.0.0(encoding@0.1.13)':
     dependencies:
@@ -25375,7 +25434,8 @@ snapshots:
 
   '@oozcitak/util@10.0.0': {}
 
-  '@opentelemetry/api@1.9.0': {}
+  '@opentelemetry/api@1.9.0':
+    optional: true
 
   '@oslojs/encoding@1.1.0': {}
 
@@ -25569,25 +25629,30 @@ snapshots:
 
   '@pnpm/config.env-replace@1.1.0': {}
 
-  '@pnpm/constants@1001.3.1': {}
+  '@pnpm/constants@1001.3.1':
+    optional: true
 
   '@pnpm/core-loggers@1001.0.6(@pnpm/logger@1001.0.1)':
     dependencies:
       '@pnpm/logger': 1001.0.1
       '@pnpm/types': 1001.0.1
+    optional: true
 
   '@pnpm/error@1000.0.5':
     dependencies:
       '@pnpm/constants': 1001.3.1
+    optional: true
 
   '@pnpm/graceful-fs@1000.0.1':
     dependencies:
       graceful-fs: 4.2.11
+    optional: true
 
   '@pnpm/logger@1001.0.1':
     dependencies:
       bole: 5.0.25
       split2: 4.2.0
+    optional: true
 
   '@pnpm/manifest-utils@1002.0.1(@pnpm/logger@1001.0.1)':
     dependencies:
@@ -25595,6 +25660,7 @@ snapshots:
       '@pnpm/error': 1000.0.5
       '@pnpm/logger': 1001.0.1
       '@pnpm/types': 1001.0.1
+    optional: true
 
   '@pnpm/network.ca-file@1.0.2':
     dependencies:
@@ -25622,12 +25688,15 @@ snapshots:
       parse-json: 5.2.0
       read-yaml-file: 2.1.0
       strip-bom: 4.0.0
+    optional: true
 
   '@pnpm/text.comments-parser@1000.0.0':
     dependencies:
       strip-comments-strings: 1.2.0
+    optional: true
 
-  '@pnpm/types@1001.0.1': {}
+  '@pnpm/types@1001.0.1':
+    optional: true
 
   '@pnpm/write-project-manifest@1000.0.13':
     dependencies:
@@ -25636,6 +25705,7 @@ snapshots:
       json5: 2.2.3
       write-file-atomic: 5.0.1
       write-yaml-file: 5.0.0
+    optional: true
 
   '@polka/url@1.0.0-next.25': {}
 
@@ -25651,11 +25721,13 @@ snapshots:
 
   '@poppinss/exception@1.2.1': {}
 
-  '@publint/pack@0.1.2': {}
+  '@publint/pack@0.1.2':
+    optional: true
 
   '@quansync/fs@1.0.0':
     dependencies:
       quansync: 1.0.0
+    optional: true
 
   '@rolldown/binding-android-arm64@1.0.0-beta.47':
     optional: true
@@ -25701,7 +25773,8 @@ snapshots:
   '@rolldown/binding-win32-x64-msvc@1.0.0-beta.47':
     optional: true
 
-  '@rolldown/debug@1.0.0-beta.53': {}
+  '@rolldown/debug@1.0.0-beta.53':
+    optional: true
 
   '@rolldown/pluginutils@1.0.0-beta.19': {}
 
@@ -27238,6 +27311,7 @@ snapshots:
       vite: '@voidzero-dev/vite-plus-core@0.0.0-afbb2977759363d708f1bf3b5c51064eadebb598(@arethetypeswrong/core@0.18.2)(@types/node@22.17.0)(@vitejs/devtools@0.0.0-alpha.19)(esbuild@0.25.8)(jiti@2.5.1)(less@4.4.0)(publint@0.3.15)(sass-embedded@1.86.0)(sass@1.93.2)(stylus@0.64.0)(sugarss@5.0.1(postcss@8.4.38))(terser@5.44.0)(tsx@4.21.0)(typescript@5.9.3)(unplugin-lightningcss@0.4.3)(unplugin-unused@0.5.6)(yaml@2.7.0)'
     transitivePeerDependencies:
       - ws
+    optional: true
 
   '@vitejs/devtools-rpc@0.0.0-alpha.19(ws@8.18.3)':
     dependencies:
@@ -27245,6 +27319,7 @@ snapshots:
       structured-clone-es: 1.0.0
     optionalDependencies:
       ws: 8.18.3
+    optional: true
 
   '@vitejs/devtools-vite@0.0.0-alpha.19(@pnpm/logger@1001.0.1)(@voidzero-dev/vite-plus-core@0.0.0-afbb2977759363d708f1bf3b5c51064eadebb598)(db0@0.3.1)(ioredis@5.6.0)(vue@3.5.25(typescript@5.9.3))':
     dependencies:
@@ -27299,6 +27374,7 @@ snapshots:
       - utf-8-validate
       - vite
       - vue
+    optional: true
 
   '@vitejs/devtools@0.0.0-alpha.19(@pnpm/logger@1001.0.1)(@voidzero-dev/vite-plus-core@0.0.0-afbb2977759363d708f1bf3b5c51064eadebb598)(db0@0.3.1)(ioredis@5.6.0)(vue@3.5.25(typescript@5.9.3))':
     dependencies:
@@ -27343,6 +27419,7 @@ snapshots:
       - uploadthing
       - utf-8-validate
       - vue
+    optional: true
 
   '@vitejs/plugin-basic-ssl@2.1.0(vite@7.2.2(@types/node@22.17.0)(jiti@2.5.1)(less@4.4.0)(lightningcss@1.30.2)(sass-embedded@1.86.0)(sass@1.93.2)(stylus@0.64.0)(sugarss@5.0.1(postcss@8.4.38))(terser@5.44.0)(tsx@4.21.0)(yaml@2.7.0))':
     dependencies:
@@ -27496,46 +27573,40 @@ snapshots:
 
   '@voidzero-dev/vite-plus-core@0.0.0-afbb2977759363d708f1bf3b5c51064eadebb598(@arethetypeswrong/core@0.18.2)(@types/node@22.17.0)(@vitejs/devtools@0.0.0-alpha.19)(esbuild@0.25.8)(jiti@2.5.1)(less@4.4.0)(publint@0.3.15)(sass-embedded@1.86.0)(sass@1.93.2)(stylus@0.64.0)(sugarss@5.0.1(postcss@8.4.38))(terser@5.44.0)(tsx@4.21.0)(typescript@5.9.3)(unplugin-lightningcss@0.4.3)(unplugin-unused@0.5.6)(yaml@2.7.0)':
     dependencies:
-      '@arethetypeswrong/core': 0.18.2
       '@babel/generator': 7.28.5
       '@babel/parser': 7.28.5
       '@babel/types': 7.28.5
       '@oxc-project/runtime': 0.101.0
+      lightningcss: 1.30.2
+      postcss: 8.5.6
+      semver: 7.7.3
+      tree-kill: 1.2.2
+    optionalDependencies:
+      '@arethetypeswrong/core': 0.18.2
       '@types/node': 22.17.0
       '@vitejs/devtools': 0.0.0-alpha.19(@pnpm/logger@1001.0.1)(@voidzero-dev/vite-plus-core@0.0.0-afbb2977759363d708f1bf3b5c51064eadebb598)(db0@0.3.1)(ioredis@5.6.0)(vue@3.5.25(typescript@5.9.3))
       esbuild: 0.25.8
+      fsevents: 2.3.3
       jiti: 2.5.1
       less: 4.4.0
-      lightningcss: 1.30.2
-      postcss: 8.5.6
       publint: 0.3.15
       sass: 1.93.2
       sass-embedded: 1.86.0
-      semver: 7.7.3
       stylus: 0.64.0
       sugarss: 5.0.1(postcss@8.4.38)
       terser: 5.44.0
-      tree-kill: 1.2.2
       tsx: 4.21.0
       typescript: 5.9.3
       unplugin-lightningcss: 0.4.3
       unplugin-unused: 0.5.6
       yaml: 2.7.0
-    optionalDependencies:
-      fsevents: 2.3.3
 
   '@voidzero-dev/vite-plus-test@0.0.0-afbb2977759363d708f1bf3b5c51064eadebb598(@arethetypeswrong/core@0.18.2)(@edge-runtime/vm@5.0.0)(@opentelemetry/api@1.9.0)(@types/node@22.17.0)(@vitejs/devtools@0.0.0-alpha.19)(@vitest/ui@3.1.4)(esbuild@0.25.8)(happy-dom@18.0.1)(jiti@2.5.1)(jsdom@26.1.0)(less@4.4.0)(publint@0.3.15)(sass-embedded@1.86.0)(sass@1.93.2)(stylus@0.64.0)(sugarss@5.0.1(postcss@8.4.38))(terser@5.44.0)(tsx@4.21.0)(typescript@5.9.3)(unplugin-lightningcss@0.4.3)(unplugin-unused@0.5.6)(yaml@2.7.0)':
     dependencies:
-      '@edge-runtime/vm': 5.0.0
-      '@opentelemetry/api': 1.9.0
       '@types/chai': 5.2.2
-      '@types/node': 22.17.0
-      '@vitest/ui': 3.1.4(@voidzero-dev/vite-plus-test@0.0.0-afbb2977759363d708f1bf3b5c51064eadebb598)
       '@voidzero-dev/vite-plus-core': 0.0.0-afbb2977759363d708f1bf3b5c51064eadebb598(@arethetypeswrong/core@0.18.2)(@types/node@22.17.0)(@vitejs/devtools@0.0.0-alpha.19)(esbuild@0.25.8)(jiti@2.5.1)(less@4.4.0)(publint@0.3.15)(sass-embedded@1.86.0)(sass@1.93.2)(stylus@0.64.0)(sugarss@5.0.1(postcss@8.4.38))(terser@5.44.0)(tsx@4.21.0)(typescript@5.9.3)(unplugin-lightningcss@0.4.3)(unplugin-unused@0.5.6)(yaml@2.7.0)
       es-module-lexer: 1.7.0
       expect-type: 1.2.2
-      happy-dom: 18.0.1
-      jsdom: 26.1.0
       obug: 2.1.1
       picomatch: 4.0.3
       pixelmatch: 7.1.0
@@ -27546,6 +27617,13 @@ snapshots:
       tinyexec: 1.0.2
       tinyglobby: 0.2.15
       ws: 8.18.3
+    optionalDependencies:
+      '@edge-runtime/vm': 5.0.0
+      '@opentelemetry/api': 1.9.0
+      '@types/node': 22.17.0
+      '@vitest/ui': 3.1.4(@voidzero-dev/vite-plus-test@0.0.0-afbb2977759363d708f1bf3b5c51064eadebb598)
+      happy-dom: 18.0.1
+      jsdom: 26.1.0
     transitivePeerDependencies:
       - '@arethetypeswrong/core'
       - '@vitejs/devtools'
@@ -27606,11 +27684,13 @@ snapshots:
       entities: 4.5.0
       estree-walker: 2.0.2
       source-map-js: 1.2.1
+    optional: true
 
   '@vue/compiler-dom@3.5.25':
     dependencies:
       '@vue/compiler-core': 3.5.25
       '@vue/shared': 3.5.25
+    optional: true
 
   '@vue/compiler-sfc@3.5.25':
     dependencies:
@@ -27623,20 +27703,24 @@ snapshots:
       magic-string: 0.30.21
       postcss: 8.5.6
       source-map-js: 1.2.1
+    optional: true
 
   '@vue/compiler-ssr@3.5.25':
     dependencies:
       '@vue/compiler-dom': 3.5.25
       '@vue/shared': 3.5.25
+    optional: true
 
   '@vue/reactivity@3.5.25':
     dependencies:
       '@vue/shared': 3.5.25
+    optional: true
 
   '@vue/runtime-core@3.5.25':
     dependencies:
       '@vue/reactivity': 3.5.25
       '@vue/shared': 3.5.25
+    optional: true
 
   '@vue/runtime-dom@3.5.25':
     dependencies:
@@ -27644,14 +27728,17 @@ snapshots:
       '@vue/runtime-core': 3.5.25
       '@vue/shared': 3.5.25
       csstype: 3.2.3
+    optional: true
 
   '@vue/server-renderer@3.5.25(vue@3.5.25(typescript@5.9.3))':
     dependencies:
       '@vue/compiler-ssr': 3.5.25
       '@vue/shared': 3.5.25
       vue: 3.5.25(typescript@5.9.3)
+    optional: true
 
-  '@vue/shared@3.5.25': {}
+  '@vue/shared@3.5.25':
+    optional: true
 
   '@webassemblyjs/ast@1.12.1':
     dependencies:
@@ -27908,7 +27995,7 @@ snapshots:
 
   accepts@2.0.0:
     dependencies:
-      mime-types: 3.0.1
+      mime-types: 3.0.2
       negotiator: 1.0.0
 
   acorn-import-attributes@1.9.5(acorn@8.11.3):
@@ -28103,7 +28190,8 @@ snapshots:
 
   ansis@4.1.0: {}
 
-  ansis@4.2.0: {}
+  ansis@4.2.0:
+    optional: true
 
   any-promise@1.3.0: {}
 
@@ -28667,10 +28755,12 @@ snapshots:
   birpc-x@0.0.5:
     dependencies:
       birpc: 2.9.0
+    optional: true
 
   birpc@2.4.0: {}
 
-  birpc@2.9.0: {}
+  birpc@2.9.0:
+    optional: true
 
   bl@4.1.0:
     dependencies:
@@ -28721,7 +28811,7 @@ snapshots:
       bytes: 3.1.2
       content-type: 1.0.5
       debug: 4.4.3
-      http-errors: 2.0.0
+      http-errors: 2.0.1
       iconv-lite: 0.6.3
       on-finished: 2.4.1
       qs: 6.14.0
@@ -28734,6 +28824,7 @@ snapshots:
     dependencies:
       fast-safe-stringify: 2.1.1
       individual: 3.0.0
+    optional: true
 
   bonjour-service@1.2.1:
     dependencies:
@@ -28882,7 +28973,8 @@ snapshots:
     optionalDependencies:
       magicast: 0.3.5
 
-  cac@6.7.14: {}
+  cac@6.7.14:
+    optional: true
 
   cacache@20.0.1:
     dependencies:
@@ -29663,6 +29755,7 @@ snapshots:
   crossws@0.3.5:
     dependencies:
       uncrypto: 0.1.3
+    optional: true
 
   crypto-random-string@4.0.0:
     dependencies:
@@ -29970,7 +30063,8 @@ snapshots:
 
   csstype@3.1.0: {}
 
-  csstype@3.2.3: {}
+  csstype@3.2.3:
+    optional: true
 
   cuint@0.2.2: {}
 
@@ -30295,6 +30389,7 @@ snapshots:
     dependencies:
       bundle-name: 4.1.0
       default-browser-id: 5.0.0
+    optional: true
 
   default-gateway@6.0.3:
     dependencies:
@@ -30401,7 +30496,8 @@ snapshots:
 
   diff@5.2.0: {}
 
-  diff@8.0.2: {}
+  diff@8.0.2:
+    optional: true
 
   dir-glob@3.0.1:
     dependencies:
@@ -30549,7 +30645,8 @@ snapshots:
 
   emoticon@4.0.1: {}
 
-  empathic@2.0.0: {}
+  empathic@2.0.0:
+    optional: true
 
   encodeurl@1.0.2: {}
 
@@ -31245,7 +31342,8 @@ snapshots:
 
   fast-levenshtein@2.0.6: {}
 
-  fast-safe-stringify@2.1.1: {}
+  fast-safe-stringify@2.1.1:
+    optional: true
 
   fast-uri@3.0.1: {}
 
@@ -31397,7 +31495,7 @@ snapshots:
       escape-html: 1.0.3
       on-finished: 2.4.1
       parseurl: 1.3.3
-      statuses: 2.0.1
+      statuses: 2.0.2
     transitivePeerDependencies:
       - supports-color
 
@@ -31672,7 +31770,8 @@ snapshots:
 
   get-port-please@3.1.2: {}
 
-  get-port-please@3.2.0: {}
+  get-port-please@3.2.0:
+    optional: true
 
   get-proto@1.0.1:
     dependencies:
@@ -31697,6 +31796,7 @@ snapshots:
   get-tsconfig@4.13.0:
     dependencies:
       resolve-pkg-maps: 1.0.0
+    optional: true
 
   getos@3.2.1:
     dependencies:
@@ -31991,6 +32091,7 @@ snapshots:
       radix3: 1.1.2
       ufo: 1.6.1
       uncrypto: 0.1.3
+    optional: true
 
   hammerjs@2.0.8: {}
 
@@ -32575,7 +32676,8 @@ snapshots:
 
   index-to-position@0.1.2: {}
 
-  individual@3.0.0: {}
+  individual@3.0.0:
+    optional: true
 
   infima@0.2.0-alpha.44: {}
 
@@ -32713,7 +32815,8 @@ snapshots:
 
   is-hexadecimal@2.0.1: {}
 
-  is-in-ssh@1.0.0: {}
+  is-in-ssh@1.0.0:
+    optional: true
 
   is-inside-container@1.0.0:
     dependencies:
@@ -33263,7 +33366,8 @@ snapshots:
 
   jiti@2.5.1: {}
 
-  jiti@2.6.1: {}
+  jiti@2.6.1:
+    optional: true
 
   joi@17.13.1:
     dependencies:
@@ -33437,12 +33541,12 @@ snapshots:
       escape-html: 1.0.3
       fresh: 0.5.2
       http-assert: 1.5.0
-      http-errors: 2.0.0
+      http-errors: 2.0.1
       koa-compose: 4.1.0
-      mime-types: 3.0.1
+      mime-types: 3.0.2
       on-finished: 2.4.1
       parseurl: 1.3.3
-      statuses: 2.0.1
+      statuses: 2.0.2
       type-is: 2.0.1
       vary: 1.1.2
 
@@ -33456,6 +33560,7 @@ snapshots:
     dependencies:
       picocolors: 1.1.1
       shell-quote: 1.8.3
+    optional: true
 
   launch-editor@2.6.1:
     dependencies:
@@ -33884,6 +33989,7 @@ snapshots:
   magic-string@0.30.21:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.5.5
+    optional: true
 
   magicast@0.3.5:
     dependencies:
@@ -34832,7 +34938,8 @@ snapshots:
     dependencies:
       minipass: 7.1.2
 
-  mitt@2.1.0: {}
+  mitt@2.1.0:
+    optional: true
 
   mkdirp@0.5.6:
     dependencies:
@@ -34851,6 +34958,7 @@ snapshots:
       pathe: 2.0.3
       pkg-types: 1.3.1
       ufo: 1.6.1
+    optional: true
 
   modify-values@1.0.1: {}
 
@@ -35098,7 +35206,8 @@ snapshots:
 
   node-fetch-native@1.6.6: {}
 
-  node-fetch-native@1.6.7: {}
+  node-fetch-native@1.6.7:
+    optional: true
 
   node-fetch@2.6.9(encoding@0.1.13):
     dependencies:
@@ -35145,7 +35254,8 @@ snapshots:
 
   node-mock-http@1.0.0: {}
 
-  node-mock-http@1.0.4: {}
+  node-mock-http@1.0.4:
+    optional: true
 
   node-releases@2.0.18: {}
 
@@ -35356,6 +35466,7 @@ snapshots:
       destr: 2.0.5
       node-fetch-native: 1.6.7
       ufo: 1.6.1
+    optional: true
 
   ohash@1.1.4: {}
 
@@ -35410,6 +35521,7 @@ snapshots:
       is-inside-container: 1.0.0
       powershell-utils: 0.1.0
       wsl-utils: 0.3.0
+    optional: true
 
   open@8.4.0:
     dependencies:
@@ -35584,6 +35696,7 @@ snapshots:
   p-limit@7.2.0:
     dependencies:
       yocto-queue: 1.2.1
+    optional: true
 
   p-locate@2.0.0:
     dependencies:
@@ -35654,7 +35767,8 @@ snapshots:
       registry-url: 6.0.1
       semver: 7.7.3
 
-  package-manager-detector@1.6.0: {}
+  package-manager-detector@1.6.0:
+    optional: true
 
   pacote@21.0.3:
     dependencies:
@@ -35844,7 +35958,8 @@ snapshots:
 
   perfect-debounce@1.0.0: {}
 
-  perfect-debounce@2.0.0: {}
+  perfect-debounce@2.0.0:
+    optional: true
 
   performance-now@2.1.0: {}
 
@@ -36797,7 +36912,8 @@ snapshots:
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
-  powershell-utils@0.1.0: {}
+  powershell-utils@0.1.0:
+    optional: true
 
   preferred-pm@4.1.1:
     dependencies:
@@ -36908,6 +37024,7 @@ snapshots:
       package-manager-detector: 1.6.0
       picocolors: 1.1.1
       sade: 1.8.1
+    optional: true
 
   pump@3.0.0:
     dependencies:
@@ -36940,7 +37057,8 @@ snapshots:
 
   quansync@0.2.10: {}
 
-  quansync@1.0.0: {}
+  quansync@1.0.0:
+    optional: true
 
   queue-microtask@1.2.3: {}
 
@@ -37160,6 +37278,7 @@ snapshots:
     dependencies:
       js-yaml: 4.1.1
       strip-bom: 4.0.0
+    optional: true
 
   readable-stream@2.3.7:
     dependencies:
@@ -37498,7 +37617,8 @@ snapshots:
 
   resolve-pathname@3.0.0: {}
 
-  resolve-pkg-maps@1.0.0: {}
+  resolve-pkg-maps@1.0.0:
+    optional: true
 
   resolve-url-loader@5.0.0:
     dependencies:
@@ -37894,7 +38014,8 @@ snapshots:
 
   sax@1.2.4: {}
 
-  sax@1.4.1: {}
+  sax@1.4.1:
+    optional: true
 
   saxes@6.0.0:
     dependencies:
@@ -38070,12 +38191,12 @@ snapshots:
       escape-html: 1.0.3
       etag: 1.8.1
       fresh: 2.0.0
-      http-errors: 2.0.0
-      mime-types: 3.0.1
+      http-errors: 2.0.1
+      mime-types: 3.0.2
       ms: 2.1.3
       on-finished: 2.4.1
       range-parser: 1.2.1
-      statuses: 2.0.1
+      statuses: 2.0.2
     transitivePeerDependencies:
       - supports-color
 
@@ -38212,7 +38333,8 @@ snapshots:
 
   shell-quote@1.8.1: {}
 
-  shell-quote@1.8.3: {}
+  shell-quote@1.8.3:
+    optional: true
 
   shelljs@0.8.5:
     dependencies:
@@ -38671,7 +38793,8 @@ snapshots:
 
   strip-bom@4.0.0: {}
 
-  strip-comments-strings@1.2.0: {}
+  strip-comments-strings@1.2.0:
+    optional: true
 
   strip-dirs@3.0.0:
     dependencies:
@@ -38701,7 +38824,8 @@ snapshots:
       '@tokenizer/token': 0.3.0
       peek-readable: 5.4.2
 
-  structured-clone-es@1.0.0: {}
+  structured-clone-es@1.0.0:
+    optional: true
 
   style-loader@3.3.1(webpack@5.102.1(@swc/core@1.5.29(@swc/helpers@0.5.17))(esbuild@0.25.8)):
     dependencies:
@@ -38748,6 +38872,7 @@ snapshots:
       source-map: 0.7.6
     transitivePeerDependencies:
       - supports-color
+    optional: true
 
   sucrase@3.35.0:
     dependencies:
@@ -38762,6 +38887,7 @@ snapshots:
   sugarss@5.0.1(postcss@8.4.38):
     dependencies:
       postcss: 8.4.38
+    optional: true
 
   superjson@2.2.1:
     dependencies:
@@ -39251,6 +39377,7 @@ snapshots:
       get-tsconfig: 4.13.0
     optionalDependencies:
       fsevents: 2.3.3
+    optional: true
 
   tuf-js@4.0.0:
     dependencies:
@@ -39303,7 +39430,7 @@ snapshots:
     dependencies:
       content-type: 1.0.5
       media-typer: 1.1.0
-      mime-types: 3.0.1
+      mime-types: 3.0.2
 
   typed-assert@1.0.9: {}
 
@@ -39313,13 +39440,15 @@ snapshots:
 
   typescript@5.5.4: {}
 
-  typescript@5.6.1-rc: {}
+  typescript@5.6.1-rc:
+    optional: true
 
   typescript@5.9.3: {}
 
   ufo@1.5.4: {}
 
-  ufo@1.6.1: {}
+  ufo@1.6.1:
+    optional: true
 
   uglify-js@3.17.4:
     optional: true
@@ -39341,6 +39470,7 @@ snapshots:
     dependencies:
       '@quansync/fs': 1.0.0
       quansync: 1.0.0
+    optional: true
 
   unconfig@7.4.2:
     dependencies:
@@ -39349,6 +39479,7 @@ snapshots:
       jiti: 2.6.1
       quansync: 1.0.0
       unconfig-core: 7.4.2
+    optional: true
 
   uncrypto@0.1.3: {}
 
@@ -39519,6 +39650,7 @@ snapshots:
       lightningcss: 1.30.2
       magic-string: 0.30.21
       unplugin: 2.3.10
+    optional: true
 
   unplugin-unused@0.5.6:
     dependencies:
@@ -39526,6 +39658,7 @@ snapshots:
       escape-string-regexp: 5.0.0
       js-tokens: 9.0.1
       unplugin: 2.3.10
+    optional: true
 
   unplugin-utils@0.2.4:
     dependencies:
@@ -39600,6 +39733,7 @@ snapshots:
     optionalDependencies:
       db0: 0.3.1
       ioredis: 5.6.0
+    optional: true
 
   untildify@4.0.0: {}
 
@@ -39735,7 +39869,8 @@ snapshots:
       spdx-correct: 3.1.1
       spdx-expression-parse: 3.0.1
 
-  validate-npm-package-name@5.0.1: {}
+  validate-npm-package-name@5.0.1:
+    optional: true
 
   validate-npm-package-name@6.0.0: {}
 
@@ -39911,10 +40046,12 @@ snapshots:
   vue-observe-visibility@2.0.0-alpha.1(vue@3.5.25(typescript@5.9.3)):
     dependencies:
       vue: 3.5.25(typescript@5.9.3)
+    optional: true
 
   vue-resize@2.0.0-alpha.1(vue@3.5.25(typescript@5.9.3)):
     dependencies:
       vue: 3.5.25(typescript@5.9.3)
+    optional: true
 
   vue-virtual-scroller@2.0.0-beta.8(vue@3.5.25(typescript@5.9.3)):
     dependencies:
@@ -39922,6 +40059,7 @@ snapshots:
       vue: 3.5.25(typescript@5.9.3)
       vue-observe-visibility: 2.0.0-alpha.1(vue@3.5.25(typescript@5.9.3))
       vue-resize: 2.0.0-alpha.1(vue@3.5.25(typescript@5.9.3))
+    optional: true
 
   vue@3.5.25(typescript@5.9.3):
     dependencies:
@@ -39932,6 +40070,7 @@ snapshots:
       '@vue/shared': 3.5.25
     optionalDependencies:
       typescript: 5.9.3
+    optional: true
 
   w3c-xmlserializer@5.0.0:
     dependencies:
@@ -40404,6 +40543,7 @@ snapshots:
     dependencies:
       js-yaml: 4.1.1
       write-file-atomic: 5.0.1
+    optional: true
 
   ws@7.5.9: {}
 
@@ -40421,6 +40561,7 @@ snapshots:
     dependencies:
       is-wsl: 3.1.0
       powershell-utils: 0.1.0
+    optional: true
 
   xdg-basedir@5.1.0: {}
 
