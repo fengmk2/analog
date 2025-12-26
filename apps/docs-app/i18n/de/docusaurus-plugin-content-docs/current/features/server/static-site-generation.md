@@ -180,7 +180,7 @@ Die `PrerenderRoute` gibt Informationen über `Route`, `Inhalt`, `Daten` und `Da
 Nachfolgend ein kleines Beispiel, in dem ein Skript angehängt wird, um Google Analytics während des Vorberechnungs-Prozesses mit `postRenderingHooks` einzubinden:
 
 ```ts
-/// <reference types="vitest" />
+/// <reference types="@voidzero-dev/vite-plus/test" />
 
 import analog from '@analogjs/platform';
 import { defineConfig } from 'vite';

@@ -264,7 +264,7 @@ The `PrerenderRoute` gives you information about `route`, `contents`, `data`, an
 Below is a small example where we can append a script to include Google Analytics during the prerendering process using `postRenderingHooks`:
 
 ```ts
-/// <reference types="vitest" />
+/// <reference types="@voidzero-dev/vite-plus/test" />
 
 import analog from '@analogjs/platform';
 import { defineConfig } from 'vite';

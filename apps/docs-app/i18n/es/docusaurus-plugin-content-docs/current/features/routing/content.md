@@ -21,7 +21,7 @@ export const appConfig: ApplicationConfig = {
 Luego, habilitar el paquete contenido en el archivo `vite.config.ts`
 
 ```ts
-/// <reference types="vitest" />
+/// <reference types="@voidzero-dev/vite-plus/test" />
 
 import { defineConfig } from 'vite';
 import analog from '@analogjs/platform';

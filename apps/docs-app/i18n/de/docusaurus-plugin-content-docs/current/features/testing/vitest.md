@@ -80,7 +80,7 @@ pnpm install -w @analogjs/vite-plugin-angular @analogjs/vitest-angular jsdom --s
 Um Vitest einzurichten, erstelle eine `vite.config.ts` im Stammverzeichnis des Projekts:
 
 ```ts
-/// <reference types="vitest" />
+/// <reference types="@voidzero-dev/vite-plus/test" />
 import { defineConfig } from 'vite';
 
 import angular from '@analogjs/vite-plugin-angular';
@@ -199,7 +199,7 @@ Aktualisiere das Objekt `test` in der Datei `vite.config.ts`.
 - Füge eine `browser`-Konfiguration für Vitest hinzu.
 
 ```ts
-/// <reference types="vitest" />
+/// <reference types="@voidzero-dev/vite-plus/test" />
 import { defineConfig } from 'vite';
 
 import angular from '@analogjs/vite-plugin-angular';
@@ -340,7 +340,7 @@ pnpm install -w vite-tsconfig-paths --save-dev
 Als Nächstes füge das Plugin zum Array `plugins` in der Datei `vite.config.ts` hinzu, wobei `root` als relativer Pfad zum Stamm des Projekts festgelegt wird.
 
 ```ts
-/// <reference types="vitest" />
+/// <reference types="@voidzero-dev/vite-plus/test" />
 import { defineConfig } from 'vite';
 
 import angular from '@analogjs/vite-plugin-angular';
@@ -356,7 +356,7 @@ export default defineConfig(({ mode }) => ({
 Für Nx-Arbeitsbereiche importiere und verwende das Plugin `nxViteTsPaths` aus dem Paket `@nx/vite`.
 
 ```ts
-/// <reference types="vitest" />
+/// <reference types="@voidzero-dev/vite-plus/test" />
 import { defineConfig } from 'vite';
 
 import angular from '@analogjs/vite-plugin-angular';

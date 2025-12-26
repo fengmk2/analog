@@ -178,7 +178,7 @@ export default defineConfig(() => {
 下面是一个小例子，我们可以使用 `postRenderingHooks` 在预渲染过程中附加一个脚本来包含 Google Analytics：
 
 ```ts
-/// <reference types="vitest" />
+/// <reference types="@voidzero-dev/vite-plus/test" />
 
 import analog from '@analogjs/platform';
 import { defineConfig } from 'vite';

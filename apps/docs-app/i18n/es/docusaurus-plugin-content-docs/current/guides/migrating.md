@@ -122,7 +122,7 @@ También puedes usar el plugin `replaceFiles()` de Nx para reemplazar archivos d
 Importa el plugin y configúralo:
 
 ```ts
-/// <reference types="vitest" />
+/// <reference types="@voidzero-dev/vite-plus/test" />
 
 import { defineConfig } from 'vite';
 import analog from '@analogjs/platform';
@@ -168,7 +168,7 @@ Los archivos estáticos en la carpeta `public` son copiados al directorio de sal
 Importa el plugin y configúralo:
 
 ```ts
-/// <reference types="vitest" />
+/// <reference types="@voidzero-dev/vite-plus/test" />
 
 import { defineConfig } from 'vite';
 import analog from '@analogjs/platform';

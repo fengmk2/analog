@@ -1,4 +1,4 @@
-/// <reference types="vitest" />
+/// <reference types="@voidzero-dev/vite-plus/test" />
 
 import analog from '@analogjs/platform';
 import { visualizer } from 'rollup-plugin-visualizer';

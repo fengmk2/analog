@@ -85,7 +85,7 @@ describe('setup-vitest generator', () => {
     const vitestConfig = tree.read('test-app/vite.config.mts', 'utf-8');
     expect(vitestConfig).toEqual(
       [
-        '/// <reference types="vitest" />',
+        '/// <reference types="@voidzero-dev/vite-plus/test" />',
         '',
         `import angular from '@analogjs/vite-plugin-angular';`,
         '',
