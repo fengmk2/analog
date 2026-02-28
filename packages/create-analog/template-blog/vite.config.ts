@@ -1,6 +1,6 @@
-/// <reference types="vitest" />
+/// <reference types="vite-plus/test" />
 
-import { defineConfig } from 'vite';
+import { defineConfig } from 'vite-plus';
 import analog from '@analogjs/platform';__TAILWIND_IMPORT__
 
 // https://vitejs.dev/config/

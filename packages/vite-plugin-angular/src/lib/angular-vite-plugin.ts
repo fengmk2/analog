@@ -8,7 +8,7 @@ import {
   relative,
   resolve,
 } from 'node:path';
-import * as vite from 'vite';
+import * as vite from 'vite-plus';
 
 import * as compilerCli from '@angular/compiler-cli';
 import { createRequire } from 'node:module';
@@ -25,7 +25,7 @@ import {
   preprocessCSS,
   ResolvedConfig,
   ViteDevServer,
-} from 'vite';
+} from 'vite-plus';
 import { buildOptimizerPlugin } from './angular-build-optimizer-plugin.js';
 import { jitPlugin } from './angular-jit-plugin.js';
 import {

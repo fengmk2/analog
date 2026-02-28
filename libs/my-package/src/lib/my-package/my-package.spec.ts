@@ -1,7 +1,7 @@
 import { TestBed } from '@angular/core/testing';
-import { describe, expect, it } from 'vitest';
+import { describe, expect, it } from 'vite-plus/test';
 import { MyPackage } from './my-package';
-import { page } from 'vitest/browser';
+import { page } from 'vite-plus/test/browser';
 
 describe(MyPackage.name, () => {
   it('works', async () => {

@@ -4,7 +4,7 @@ import {
   createBuilder,
   targetFromTargetString,
 } from '@angular-devkit/architect';
-import type { InlineConfig } from 'vite';
+import type { InlineConfig } from 'vite-plus';
 import { ViteBuildSchema } from './schema';
 
 async function viteBuilder(

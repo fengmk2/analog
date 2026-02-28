@@ -1,4 +1,4 @@
-/// <reference types="vite/client" />
+/// <reference types="vite-plus/client" />
 
 import { inject } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';

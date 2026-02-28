@@ -1,5 +1,5 @@
 import { createHash } from 'node:crypto';
-import { Plugin, ResolvedConfig, preprocessCSS } from 'vite';
+import { Plugin, ResolvedConfig, preprocessCSS } from 'vite-plus';
 
 export function jitPlugin({
   inlineStylesExtension,

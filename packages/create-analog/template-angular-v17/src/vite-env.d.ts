@@ -1,4 +1,4 @@
-/// <reference types="vite/client" />
+/// <reference types="vite-plus/client" />
 
 // Uncomment the lines below to enable types for experimental .analog format support
 // interface ImportAttributes {

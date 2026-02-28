@@ -1,6 +1,6 @@
 import angular from '@analogjs/vite-plugin-angular';
 import { basename, dirname } from 'path';
-import type { Plugin, TestProjectConfiguration } from 'vitest/config';
+import type { Plugin, TestProjectConfiguration } from 'vite-plus';
 
 const name = basename(dirname(__filename));
 

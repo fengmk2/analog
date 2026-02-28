@@ -1,4 +1,4 @@
-import type { Plugin } from 'vite';
+import type { Plugin } from 'vite-plus';
 import { JavaScriptTransformer } from './utils/devkit.js';
 
 export function routerPlugin(): Plugin {

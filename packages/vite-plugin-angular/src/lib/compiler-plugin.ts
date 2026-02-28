@@ -6,7 +6,7 @@
  * found in the LICENSE file at https://angular.dev/license
  */
 
-import type { DepOptimizationConfig, Rolldown } from 'vite';
+import type { DepOptimizationConfig, Rolldown } from 'vite-plus';
 import type { PluginBuild } from 'esbuild';
 
 import {

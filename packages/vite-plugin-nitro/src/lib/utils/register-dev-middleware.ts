@@ -1,4 +1,4 @@
-import { ViteDevServer } from 'vite';
+import { ViteDevServer } from 'vite-plus';
 import { EventHandler, createEvent } from 'h3';
 import { globSync } from 'tinyglobby';
 

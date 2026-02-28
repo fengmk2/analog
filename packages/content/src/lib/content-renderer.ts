@@ -1,4 +1,4 @@
-/// <reference types="vite/client" />
+/// <reference types="vite-plus/client" />
 
 import { Injectable, TransferState, inject, makeStateKey } from '@angular/core';
 

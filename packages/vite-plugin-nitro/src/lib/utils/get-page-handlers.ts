@@ -2,7 +2,7 @@ import { resolve, relative } from 'node:path';
 import { globSync } from 'tinyglobby';
 
 import { NitroEventHandler } from 'nitropack';
-import { normalizePath } from 'vite';
+import { normalizePath } from 'vite-plus';
 
 type GetHandlersArgs = {
   workspaceRoot: string;

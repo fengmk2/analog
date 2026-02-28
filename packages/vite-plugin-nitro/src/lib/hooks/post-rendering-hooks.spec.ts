@@ -1,5 +1,5 @@
 import { Nitro } from 'nitropack';
-import { vi } from 'vitest';
+import { vi } from 'vite-plus/test';
 
 import { addPostRenderingHooks } from './post-rendering-hook';
 

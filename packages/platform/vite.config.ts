@@ -1,4 +1,4 @@
-/// <reference types="vitest" />
+/// <reference types="vite-plus/test" />
 
 import { defineConfig } from 'vite';
 

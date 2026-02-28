@@ -1,6 +1,6 @@
 import { resolve } from 'node:path';
 import { ServerResponse } from 'node:http';
-import { Connect, Plugin, ViteDevServer } from 'vite';
+import { Connect, Plugin, ViteDevServer } from 'vite-plus';
 
 import { EmitFileResult } from './models.js';
 
