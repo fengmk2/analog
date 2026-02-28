@@ -1,4 +1,4 @@
-import { describe, expect } from 'vitest';
+import { describe, expect } from 'vite-plus/test';
 import * as fs from 'node:fs';
 
 vi.mock('fs');

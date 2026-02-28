@@ -1,5 +1,5 @@
-import { Plugin, UserConfig } from 'vite';
-import * as vite from 'vite';
+import { Plugin, UserConfig } from 'vite-plus';
+import * as vite from 'vite-plus';
 
 /**
  * Sets up test config for Vitest

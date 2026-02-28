@@ -1,8 +1,8 @@
-/// <reference types="vitest" />
+/// <reference types="vite-plus/test" />
 
 import analog from '@analogjs/platform';
 import { nxViteTsPaths } from '@nx/vite/plugins/nx-tsconfig-paths.plugin';
-import { defineConfig } from 'vite';
+import { defineConfig } from 'vite-plus';
 
 export default defineConfig(() => {
   return {

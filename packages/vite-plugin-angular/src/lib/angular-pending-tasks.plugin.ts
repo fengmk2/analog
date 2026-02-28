@@ -1,4 +1,4 @@
-import { Plugin } from 'vite';
+import { Plugin } from 'vite-plus';
 
 import { angularFullVersion } from './utils/devkit.js';
 

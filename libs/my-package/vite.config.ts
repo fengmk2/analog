@@ -1,9 +1,9 @@
-/// <reference types='vitest' />
+/// <reference types='vite-plus/test' />
 import angular from '@analogjs/vite-plugin-angular';
 import { nxCopyAssetsPlugin } from '@nx/vite/plugins/nx-copy-assets.plugin';
 import { nxViteTsPaths } from '@nx/vite/plugins/nx-tsconfig-paths.plugin';
-import { defineConfig } from 'vite';
-import { playwright } from '@vitest/browser-playwright';
+import { defineConfig } from 'vite-plus';
+import { playwright } from 'vite-plus/test/browser-playwright';
 
 export default defineConfig(({ mode }) => ({
   root: __dirname,

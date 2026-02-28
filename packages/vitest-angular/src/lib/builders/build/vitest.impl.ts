@@ -1,7 +1,7 @@
 import { createBuilder } from '@angular-devkit/architect';
 import * as path from 'path';
 import type { Vitest } from 'vitest/node';
-import type { Plugin, UserConfig } from 'vite';
+import type { Plugin, UserConfig } from 'vite-plus';
 import type { TestUserConfig as VitestConfig } from 'vitest/node';
 import { globSync } from 'tinyglobby';
 

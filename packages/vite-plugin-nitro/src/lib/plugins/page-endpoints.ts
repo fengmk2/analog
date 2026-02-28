@@ -1,5 +1,5 @@
 import { buildSync } from 'esbuild';
-import { normalizePath } from 'vite';
+import { normalizePath } from 'vite-plus';
 
 export function pageEndpointsPlugin() {
   return {

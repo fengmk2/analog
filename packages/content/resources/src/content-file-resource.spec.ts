@@ -4,7 +4,7 @@ import { TestBed } from '@angular/core/testing';
 import { ActivatedRoute, convertToParamMap } from '@angular/router';
 import { CONTENT_FILE_LOADER, ContentRenderer } from '@analogjs/content';
 import { of } from 'rxjs';
-import { expect } from 'vitest';
+import { expect } from 'vite-plus/test';
 
 import { contentFileResource } from './content-file-resource';
 

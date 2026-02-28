@@ -1,5 +1,5 @@
 import { TestBed } from '@angular/core/testing';
-import { expect, test } from 'vitest';
+import { expect, test } from 'vite-plus/test';
 import { MY_TOKEN } from './my-token';
 
 test('configure providers with setupTestBed', () => {

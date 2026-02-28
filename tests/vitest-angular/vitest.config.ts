@@ -1,7 +1,7 @@
 import { nxCopyAssetsPlugin } from '@nx/vite/plugins/nx-copy-assets.plugin';
 import { nxViteTsPaths } from '@nx/vite/plugins/nx-tsconfig-paths.plugin';
-import { playwright } from '@vitest/browser-playwright';
-import { defineConfig, Plugin } from 'vitest/config';
+import { playwright } from 'vite-plus/test/browser-playwright';
+import { defineConfig, Plugin } from 'vite-plus';
 import aotProject from './src/aot/vitest.project';
 import providersProject from './src/providers/vitest.project';
 import resetTestBedBetweenTestsProject from './src/reset-test-bed-between-tests/vitest.project';

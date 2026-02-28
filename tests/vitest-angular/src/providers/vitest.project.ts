@@ -1,5 +1,5 @@
 import angular from '@analogjs/vite-plugin-angular';
-import type { Plugin, TestProjectInlineConfiguration } from 'vitest/config';
+import type { Plugin, TestProjectInlineConfiguration } from 'vite-plus';
 
 import { basename, dirname } from 'path';
 

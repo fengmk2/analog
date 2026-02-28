@@ -1,6 +1,6 @@
 import { InjectionToken } from '@angular/core';
 import { TestBed } from '@angular/core/testing';
-import { expect, test } from 'vitest';
+import { expect, test } from 'vite-plus/test';
 
 test.each([1, 2])('provide and inject dependency #%s', () => {
   const MY_TOKEN = new InjectionToken<string>('MY_TOKEN');
